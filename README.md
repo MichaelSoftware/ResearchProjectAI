@@ -15,7 +15,7 @@ In terms of predictors, alcohol, sulfates, volatile acidity, and sulfur dioxide 
 
 ## Video Presentation
 **Video Link:**  
-(Insert your Loom or YouTube link here)
+https://youtu.be/LrXRiIHyK2w
 
 ---
 
