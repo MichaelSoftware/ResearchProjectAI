@@ -1,0 +1,42 @@
+//for any avoidance of doubt, this is the Google Form Submission Completed For This Assignment (as the deliverable)
+
+Full Name:
+/*
+Michael Wojcik
+*/
+
+Abstract: In a paragraph please explain the project and your final results (performance of model). An example abstract is accessible here: https://www.researchgate.net/publication/354124343_Enhancing_disaster_mutual_assistance_decisions_with_machine_learning_case_of_electricity_utilities
+/*
+The purpose of this study is to analyze the problem of predicting wine quality using the red wine subset of the Wine Quality dataset available in the UCI Machine Learning Repository. An analysis of 1,599 Portuguese red wines is included in this dataset, which contains 11 physicochemical measurements and an assessment of their sensory quality by human tasters. Rather than treating the task as a single class classification problem, I treated it as a multiclass classification problem using the original quality scores as discrete categories. In the present study, an 80/20 stratified split was used for training and evaluating a Random Forest model. According to previous research, the model's accuracy on the test set was approximately 0.68. Among the predictors, alcohol, sulfates, volatile acidity, and sulfur dioxide levels performed best. Overall, the results of the analysis were as good as they could be with this dataset without rebalancing the problem or refocusing it in the way that we would like it to be assessed.
+*/
+
+Literature Review: Find at least 3 relevant papers used the same dataset of your project and summarize their findings (performance of model for prediction) 
+/*
+Across the studies by Cortez et al. (2009), Jain et al. (2023), and Zaza et al. (2023), the general consensus is that wine quality can be predicted reasonably well from the physico-chemical attributes provided in the Wine Quality dataset, but only up to a point. Cortez et al. (2009), who introduced the dataset, found that classical machine-learning models can achieve moderate accuracy with alcohol, sulphates, and acidity being the most influential features. Jain et al. (2023) improved the prediction accuracy to around 85%. As a result of using Random Forest and Gradient Boosting methods, alcohol and sulphates were confirmed to be important predictors. As well, Zaza et al. (2023) demonstrated that advanced models, such as SVMs and Gradient Boosting, performed best in binary classification, while multiclass prediction remained challenging due to the rarity of extreme quality scores.
+*/
+
+Feature Engineering:  Which attributes you used for estimation and if they are categorical or numerical (mention them by feature:categorical or feature:numerical). If you dropped any columns please share your reasons)
+/*
+I used all 11 attributes provided in the red wine dataset as features. Every one of them is numerical, and the dataset contains no categorical variables. The dataset is already clean, has no missing values, and all features are usable as-is. I did not drop any columns because each feature corresponds to a chemical measurement that influences wine production or flavor, and none of them were clearly redundant or irrelevant.
+*/
+
+Performance Metric: What performance metric you believe you should choose to compare models? Please provide your reasons briefly
+/*
+For this project since we’re dealing with a multi-class classification problem where the labels are quality scores. The metrics provided from the analysis gives an overall quick sense of where the drinks fall on a scale. Having said that, the dataset is heavily imbalanced where most wines fall into classes 5 and 6 therefore, accuracy alone cannot really be calculated. Therefore, I used Weighted F1 accounts for precision, which makes it more suitable than macro averages or simple accuracy for the result. 
+*/
+
+Experimental Results: What is the best model among all tested models and what is the best performance? 
+/*
+The best-performing model in my experiments was the Random Forest where it used an 80/20 stratified split, with a weighted F1-score around 0.66–0.67. The model performed well and this is where most of the correct predictions came from.
+*/
+
+Conclusions: Please share your ideas about the project and research you have done. Do you know any better library for performing similar tasks? 
+/*
+As reported in the research, the Random Forest model handled the problem reasonably well and performed within the range reported in the study. Across the papers I reviewed, the patterns were consistent. My next step would probably be to investigate some more advanced libraries if I were to extend this work. With some proper tuning, XGBoost and LightGBM can often be more effective on structured data. In working through this project, I was able to discern that the red wine dataset has a ceiling on how well a model can realistically perform. A lack of classes like 3, 4, and 8 in the data also limits multiclass accuracy due to the imbalance between common and rare. 
+*/
+
+
+Future Work and Research: Please let me know if you are interested to work with a group of researchers on a similar dataset and publish a research paper to solve real world problems in the following semester(s). Your name will be added as a researcher on paper. You can see an example project here: https://www.mdpi.com/2076-3417/11/23/11198
+/*
+No, I am not interested.
+*/
